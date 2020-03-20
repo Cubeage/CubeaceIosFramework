@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 			广州超方体网络科技有限公司CubeaceIosFramework SDK
                    DESC
 
-  spec.homepage     = "https://github.com/zzw282573369/SDKFramework"
+  spec.homepage     = "https://github.com/Touch-Network/CubeaceIosFramework"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/zzw282573369/SDKFramework.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Touch-Network/CubeaceIosFramework.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
