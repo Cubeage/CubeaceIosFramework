@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "User.h"
+#import "AlertMessage.h"
 #import "NotificationAction.h"
+#import "CCGAssistiveTouchButton.h"
 
 #define NSNotificationLogOutCallBack      @"NSNotificationLogOutCallBack"
 
@@ -24,9 +26,13 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 @interface CubeaceSDKManager : NSObject
 
+@property (nonatomic, strong)CCGAssistiveTouchButton * CCGButton;
+
 @property (nonatomic, strong)NSArray * products;
 
 @property (nonatomic, strong)NSTimer * checkOrderTimer;
+
+@property (nonatomic, strong)NSTimer * redDotTimer;
 
 + (instancetype)sharedInstance;
 
@@ -92,12 +98,6 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 */
 - (void)loginCallBack:(LoginCallBack)completion;
 
-/**
-*  登出接口
-*
-*  @param completion   登出的回调
-*/
-- (void)logOut:(LogOutCallBack)completion;
 
 /**
 *  检查是否是游客guest登录的接口
@@ -211,6 +211,10 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 *  取消所有本地定时推送通知接口
 */
 - (void)cancelAllNotification;
+
+
+
+- (void)popAlertMessageGameLocation:(int)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
 
 
 @end

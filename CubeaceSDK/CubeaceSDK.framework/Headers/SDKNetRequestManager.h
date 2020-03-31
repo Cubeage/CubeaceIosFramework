@@ -37,6 +37,9 @@ typedef void (^Completion)(BOOL success, id data, NSError* error);
 //要在登錄狀態調用,沒有額外參數
 - (void)requestEventMessageCompletion:(void (^)(BOOL success, id data, NSError* error))completion;
 
+//獲取訊息列表
+- (void)requestMessageListCompletion:(void (^)(BOOL success, id data, NSError* error))completion;
+
 //漏单补发请求
 - (void)checkOrderSupplyAgainOrderInfo:(NSDictionary *)orderNoInfo Completion:(void (^)(BOOL success, id data, NSError* error))completion;
 

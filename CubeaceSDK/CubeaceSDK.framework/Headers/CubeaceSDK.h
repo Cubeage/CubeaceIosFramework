@@ -22,4 +22,5 @@ FOUNDATION_EXPORT const unsigned char CubeaceSDKVersionString[];
 #import <CubeaceSDK/SDKNetRequestManager.h>
 #import <CubeaceSDK/MJNPromptView.h>
 #import <CubeaceSDK/AccountInformation.h>
+#import <CubeaceSDK/CCGAssistiveTouchButton.h>
 
