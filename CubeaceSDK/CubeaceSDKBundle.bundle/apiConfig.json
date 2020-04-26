@@ -15,7 +15,7 @@
     "buglySdkKey" : "debugBugly",
     "apnsCername" : "debugApns",
     "env" : "测试环境",
-    "envKey" : "testing",
+    "envKey" : "development",
 },{
     "baseURL" : "https://dev.cubeace.com",
     "versionUpdateURL" : "http://simulation.com/version/update",
@@ -24,5 +24,5 @@
     "buglySdkKey" : "simulationBugly",
     "apnsCername" : "simulationApns",
     "env" : "开发环境",
-    "envKey" : "development",
+    "envKey" : "simulation",
 }]

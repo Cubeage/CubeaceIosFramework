@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char CubeaceSDKVersionString[];
 
 #import <CubeaceSDK/CubeaceSDKManager.h>
 #import <CubeaceSDK/User.h>
+#import <CubeaceSDK/LoginSuccessALLInfo.h>
 #import <CubeaceSDK/NotificationAction.h>
 #import <CubeaceSDK/SDKNetRequestManager.h>
 #import <CubeaceSDK/MJNPromptView.h>

@@ -36,7 +36,7 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 + (instancetype)sharedInstance;
 
-- (void)initCubeaceSDK;
+- (void)initCubeaceSDK:(void (^)(BOOL isInitSDKSuccess, NSString * cubeaceSDKVersion))completion;
 
 - (BOOL)cubeaceSDKApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
@@ -76,10 +76,10 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 *
 *  @param urlStr   分享的链接
 *  @param textStr   分享的文本信息
-*  @param imagePath   分享的图片
+*  @param image   分享的图片
 *  @param completion   分享的回调
 */
-- (void)cubeaceSDKShareDynamicLinkUrl:(NSString * __nullable)urlStr TextString:(NSString * __nullable)textStr image:(NSString * __nullable)imagePath CallBack:(ShareCallBack)completion;
+- (void)cubeaceSDKShareDynamicLinkUrl:(NSString * __nullable)urlStr TextString:(NSString * __nullable)textStr Image:(UIImage * __nullable)image CallBack:(ShareCallBack)completion;
 
 /**
 *  账号绑定接口
@@ -119,8 +119,6 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 //查漏补单
 - (void)checkOrder;
-
-- (UIImage *)screenShot;
 
 /**
 *  自定义事件埋点采集接口
@@ -187,8 +185,6 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 */
 - (void)uploadAchievmentToGameCenterPercentComplete:(float) percent;
 
-- (NSString *)getSDKVersion;
-
 /**
 *  添加本地定时推送通知
 *  @param noticeId   唯一标识
@@ -214,7 +210,7 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 
 
-- (void)popAlertMessageGameLocation:(int)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
+- (void)popAlertMessageGameLocation:(NSInteger)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
 
 
 @end
