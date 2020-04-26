@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.0.3"
+  spec.version      = "2.0.4"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -152,5 +152,72 @@ Pod::Spec.new do |spec|
   spec.dependency "Firebase/Messaging"
 
   spec.dependency "GA-SDK-IOS", "~> 2.2"
+
+# ============================== START ShareSDK ==============================
+  # 主模块(必须)
+  spec.dependency 'mob_sharesdk'
+ 
+ 
+  # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+  spec.dependency 'mob_sharesdk/ShareSDKUI'
+ 
+ 
+  # 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+  #（微信sdk不带支付的命令）
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   
+  #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个
+  # spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'）
+ 
+  # 平台SDK模块其他平台，按需添加
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/RenRen'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Kakao'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Yixin'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Messenger'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Copy'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Evernote'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Instagram'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Instapaper'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Line'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Mail'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/SMS'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WhatsApp'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MeiPai'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouTube'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Twitter'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Dropbox'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/CMCC'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Telegram'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Reddit'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DouBan'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Flickr'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/KaiXin'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/LinkedIn'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MingDao'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pinterest'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pocket'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Print'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/TencentWeibo'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Tumblr'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/VKontakte'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouDaoNote'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/ESurfing'
+  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/FacebookAccount'
+ 
+  # 使用配置文件分享模块（非必需）
+  spec.dependency 'mob_sharesdk/ShareSDKConfigFile'
+ 
+  # 扩展模块（在调用可以弹出我们UI分享方法的时候是必需的）
+  spec.dependency 'mob_sharesdk/ShareSDKExtension'
+
+# ============================== END ShareSDK ==============================
+
+
 
 end
