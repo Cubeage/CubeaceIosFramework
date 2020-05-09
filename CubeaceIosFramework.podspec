@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.0.4"
+  spec.version      = "2.0.5"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -152,6 +152,8 @@ Pod::Spec.new do |spec|
   spec.dependency "Firebase/Messaging"
 
   spec.dependency "GA-SDK-IOS", "~> 2.2"
+
+  spec.dependency 'TwitterKit'
 
 # ============================== START ShareSDK ==============================
   # 主模块(必须)

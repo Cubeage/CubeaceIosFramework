@@ -64,22 +64,21 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- *  Facebook分享接口
+ *  Link分享接口
  *
- *  @param imageUrl   分享图片的链接
+ *  @param urlStr   分享的链接
  *  @param completion   分享的回调
  */
-- (void)cubeaceSDKFBShareImageUrl:(NSString * __nullable)imageUrl CallBack:(ShareCallBack)completion;
+- (void)cubeaceSDKShareLinkUrl:(NSString * __nonnull)urlStr CallBack:(ShareCallBack)completion;
 
 /**
-*  deeplink分享接口
+*  分享文本＋图片接口
 *
-*  @param urlStr   分享的链接
 *  @param textStr   分享的文本信息
-*  @param image   分享的图片
+*  @param imageUrlStr   分享的图片链接
 *  @param completion   分享的回调
 */
-- (void)cubeaceSDKShareDynamicLinkUrl:(NSString * __nullable)urlStr TextString:(NSString * __nullable)textStr Image:(UIImage * __nullable)image CallBack:(ShareCallBack)completion;
+- (void)cubeaceSDKShareText:(NSString * __nullable)textStr ImageURL:(NSString * __nonnull)imageUrlStr CallBack:(ShareCallBack)completion;
 
 /**
 *  账号绑定接口
