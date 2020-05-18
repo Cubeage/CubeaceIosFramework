@@ -211,6 +211,7 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 - (void)popAlertMessageGameLocation:(NSInteger)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
 
+- (NSString *)valueForConfigsKeyName:(NSString * __nonnull)keyName;
 
 @end
 

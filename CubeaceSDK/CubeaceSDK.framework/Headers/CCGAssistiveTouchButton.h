@@ -20,6 +20,8 @@ typedef void(^ChildBtnOnClick)(NSInteger index);
 
 - (void)refreshButtonIconImageWithIndexs:(NSArray *) redDotIndexsArray;
 
+- (void)refreshButtonTitle;
+
 - (void)removeButton;
 
 @end
