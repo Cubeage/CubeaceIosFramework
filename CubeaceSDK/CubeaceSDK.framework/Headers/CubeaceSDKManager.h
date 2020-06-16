@@ -34,6 +34,8 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 
 @property (nonatomic, strong)NSTimer * redDotTimer;
 
+@property (nonatomic, strong)NSTimer * popTopTipsTimer;
+
 + (instancetype)sharedInstance;
 
 - (void)initCubeaceSDK:(void (^)(BOOL isInitSDKSuccess, NSString * cubeaceSDKVersion))completion;
@@ -207,11 +209,21 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 */
 - (void)cancelAllNotification;
 
-
-
+/**
+*  讯息获取接口
+*  @param currentLocation  当前所处位置：1 游戏大厅  2 一场游戏后
+*  @param completion  讯息接口回调，返回了弹框的信息内容
+*/
 - (void)popAlertMessageGameLocation:(NSInteger)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
 
 - (NSString *)valueForConfigsKeyName:(NSString * __nonnull)keyName;
+
+- (void)popTopTips:(NSString *)tips;
+
+/**
+*  用户头像
+*/
+- (NSString *)userProfileImage;
 
 @end
 

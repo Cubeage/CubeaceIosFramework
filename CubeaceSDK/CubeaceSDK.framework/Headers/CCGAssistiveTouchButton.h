@@ -14,9 +14,9 @@ typedef void(^ChildBtnOnClick)(NSInteger index);
 
 @interface CCGAssistiveTouchButton : UIButton
 
-- (instancetype)initWithFrame:(CGRect)frame addWindow:(UIWindow *)window;
-
 - (instancetype)initWithFrame:(CGRect)frame addWindow:(UIWindow *)window ChildBtnOnClick:(ChildBtnOnClick)clickEvent;
+
+- (void)popTopTipsTitle:(NSString *)titleStr;
 
 - (void)refreshButtonIconImageWithIndexs:(NSArray *) redDotIndexsArray;
 
