@@ -24,6 +24,10 @@ typedef void (^Completion)(BOOL success, id data, NSError* error);
 
 //get请求方式
 - (void)getWithURL:(NSString *)urlStr Parameter:(id)parameter SetHeader:(NSDictionary*)headDict Completion:(void (^)(BOOL success, id data, NSError* error))completion;
+
+//上传文件 图片/视频
+- (void)updownFileWithURL:(NSString *)urlStr fildPath:(NSString *)fildPath Completion:(void (^)(BOOL success, id data, NSError* error))completion;
+
 ///////////////////////////////////////////////////////////
 
 
