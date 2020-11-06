@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>gameId</key>
-	<string>1</string>
+	<string></string>
 	<key>GoogleSignInClientID</key>
 	<string>698427219128-o1c72e1osgkg0kv8m5amlik9pbvjll56.apps.googleusercontent.com</string>
 	<key>GameAnalyticsKey</key>
@@ -21,8 +21,8 @@
 	<key>WeChatUniversalLink</key>
 	<string></string>
 	<key>SDKMode</key>
-	<string>1</string>
+	<string></string>
 	<key>ENVType</key>
-	<string>1</string>
+	<string></string>
 </dict>
 </plist>
