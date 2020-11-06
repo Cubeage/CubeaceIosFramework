@@ -24,6 +24,8 @@ typedef void (^SucceessBlock)(BOOL isSuccess , NSString * info);
 typedef void (^CheckGuestCallBack)(int callBackStatu);
 typedef void (^ProductsInfoCallBack)(NSArray * products);
 
+typedef void (^CompletionCallback)(void);
+
 @interface CubeaceSDKManager : NSObject
 
 @property (nonatomic, strong)CCGAssistiveTouchButton * CCGButton;
@@ -224,6 +226,11 @@ typedef void (^ProductsInfoCallBack)(NSArray * products);
 *  用户头像
 */
 - (NSString *)userProfileImage;
+
+/**
+*  客服系统
+*/
+- (void)openCustomerServiceSystem;
 
 @end
 

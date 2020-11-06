@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.1.0"
+  spec.version      = "2.1.1"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -153,7 +153,8 @@ Pod::Spec.new do |spec|
 
   spec.dependency "GA-SDK-IOS", "~> 2.2"
 
-  spec.dependency 'TwitterKit'
+  ##暂时不需要，因为包括UIWebbView，会提审不了
+  #spec.dependency 'TwitterKit'
 
 # ============================== START ShareSDK ==============================
   # 主模块(必须)
@@ -173,7 +174,6 @@ Pod::Spec.new do |spec|
   # spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'）
  
   # 平台SDK模块其他平台，按需添加
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/RenRen'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Kakao'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Yixin'
@@ -210,7 +210,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/VKontakte'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouDaoNote'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/ESurfing'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/FacebookAccount'
  
   # 使用配置文件分享模块（非必需）
   spec.dependency 'mob_sharesdk/ShareSDKConfigFile'

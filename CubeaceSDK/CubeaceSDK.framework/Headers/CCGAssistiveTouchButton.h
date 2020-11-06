@@ -16,9 +16,9 @@ typedef void(^ChildBtnOnClick)(NSInteger index);
 
 - (instancetype)initWithFrame:(CGRect)frame addWindow:(UIWindow *)window ChildBtnOnClick:(ChildBtnOnClick)clickEvent;
 
-- (void)popTopTipsTitle:(NSString *)titleStr;
+- (void)popTopTipsTitle:(NSString *)contentStr;
 
-- (void)refreshButtonIconImageWithIndexs:(NSArray *) redDotIndexsArray;
+- (void)refreshButtonIconImageWithIndexs:(NSArray *)redDotIndexsArray;
 
 - (void)refreshButtonTitle;
 
