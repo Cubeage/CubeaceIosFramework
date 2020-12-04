@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.1.5"
+  spec.version      = "2.1.6"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -137,6 +137,10 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
+
+  #Xcode12 Cocoapods 打包 必须加入下面这两句，Xcode12要求打的包必须包含ARM64的模拟器，之前模拟器是X86-64
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
