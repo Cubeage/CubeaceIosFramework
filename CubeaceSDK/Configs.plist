@@ -10,6 +10,10 @@
 	<string>cbbc05f850ec64e449515988e3fb4f2c</string>
 	<key>GameAnalyticsSecret</key>
 	<string>0bba533320619d9432cef1bd46857ce31fc7fdd1</string>
+	<key>FacebookID</key>
+	<string></string>
+	<key>FacebookAppSecret</key>
+	<string></string>
 	<key>LeaderBoardID</key>
 	<string>myLeaderBoardID</string>
 	<key>AchievementID</key>
