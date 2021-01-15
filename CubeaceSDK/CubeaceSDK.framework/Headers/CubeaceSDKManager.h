@@ -42,6 +42,9 @@ typedef void (^InAppPurchasesFail)(id error);
 
 @property (nonatomic, strong)InAppPurchasesFail appPurchasesFail;
 
+@property (nonatomic, assign)BOOL isOpenCustomerServiceSystem; //是否打开了客服系统界面
+@property (nonatomic, assign)BOOL isLogining; // 防止多次打开web登录流程
+
 + (instancetype)sharedInstance;
 
 - (void)initCubeaceSDK:(void (^)(BOOL isInitSDKSuccess, NSString * cubeaceSDKVersion))completion;
