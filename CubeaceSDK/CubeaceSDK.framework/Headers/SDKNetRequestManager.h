@@ -87,7 +87,10 @@ typedef void (^Completion)(BOOL success, id data, NSError* error);
 - (void)logCollectionUploadContent:(NSString *)logContent Completion:(void (^)(BOOL success, id data, NSError* error))completion;
 
 //Firebase FCM token上传
-- (void)reportFirebaseToken:(NSString *)token DeviceCode:(NSString *)deviceCode Completion:(void (^)(BOOL success, id data, NSError* error))completion;
+- (void)reportFirebaseToken:(NSString *)fcmToken DeviceCode:(NSString *)deviceCode Completion:(void (^)(BOOL success, id data, NSError* error))completion;
+
+//告知服务器推送消息数量置0
+- (void)reportBadgeZeroSettingCompletion:(void (^)(BOOL success, id data, NSError* error))completion;
 
 //请求是否是游客guest登录
 - (void)isGuestCompletion:(void (^)(BOOL success, id data, NSError* error))completion;
