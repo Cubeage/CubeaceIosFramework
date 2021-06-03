@@ -77,21 +77,19 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
  *  Link分享接口
  *
- *  @param requestId   接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
  *  @param urlStr   分享的链接
  *  @param completion   分享的回调
  */
-- (void)cubeaceSDKRequestId:(NSString * __nullable)requestId ShareLinkUrl:(NSString * __nonnull)urlStr CallBack:(ShareCallBack)completion;
+- (void)cubeaceSDKShareLinkUrl:(NSString * __nonnull)urlStr CallBack:(ShareCallBack)completion;
 
 /**
 *  分享文本＋图片接口
 *
-*  @param requestId   接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param textStr   分享的文本信息
 *  @param imageUrlStr   分享的图片链接
 *  @param completion   分享的回调
 */
-- (void)cubeaceSDKRequestId:(NSString * __nullable)requestId ShareText:(NSString * __nullable)textStr ImageURL:(NSString * __nonnull)imageUrlStr CallBack:(ShareCallBack)completion;
+- (void)cubeaceSDKShareText:(NSString * __nullable)textStr ImageURL:(NSString * __nonnull)imageUrlStr CallBack:(ShareCallBack)completion;
 
 /**
 *  账号绑定接口
@@ -111,31 +109,28 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
 *  登录接口
 *
-*  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param completion   登录的回调
 */
-- (void)loginRequestId:(NSString * __nullable)requestId CallBack:(LoginCallBack)completion;
+- (void)loginCallBack:(LoginCallBack)completion;
 
 
 /**
 *  检查是否是游客guest登录的接口
 *
-*  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param isCheck   是否检查， YES 检查，NO 不检查
 *  @param completion  接口回调： 0，需要游戏退出游戏 1，需要游戏不退出游戏2，告知游戏该用户是游客，请游戏弹窗
 */
-- (void)checkRequestId:(NSString * __nullable)requestId Guest:(BOOL)isCheck Completion:(CheckGuestCallBack)completion;
+- (void)checkGuest:(BOOL)isCheck Completion:(CheckGuestCallBack)completion;
 
 /**
  *  内购产品接口
  *
- *  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
  *  @param itemId   传入游戏内部所需要购买的产品的产品itemId 例如：‘item1’
  *  @param gameOrderNo   传入游戏的订单号 例如：‘gameOrderNo1’，可传入空值nil
  *  @param success   购买成功的回调
  *  @param failure   购买失败的回调
  */
-- (void)buyRequestId:(NSString * __nullable)requestId GameItem:(NSString * __nonnull)itemId GameOrderNo:(NSString * __nonnull)gameOrderNo Success:(void (^)(NSDictionary * response))success Failure:(InAppPurchasesFail)failure;
+- (void)buyGameItem:(NSString * __nonnull)itemId GameOrderNo:(NSString * __nonnull)gameOrderNo Success:(void (^)(NSDictionary * response))success Failure:(InAppPurchasesFail)failure;
 
 //查漏补单
 - (void)checkOrder;
@@ -166,10 +161,9 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
 *  获取可购买商品列表信息
 *
-*  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param completion   列表信息回调
 */
-- (void)requestId:(NSString * __nullable)requestId AllProductsIDInfo:(ProductsInfoCallBack) completion;
+- (void)requestAllProductsIDInfo:(ProductsInfoCallBack) completion;
 
 /**
 *  震动效果
@@ -209,7 +203,6 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
 *  添加本地定时推送通知
  
-*  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param noticeId   唯一标识
 *  @param title   通知标题
 *  @param message   通知内容
@@ -218,7 +211,7 @@ typedef void (^InAppPurchasesFail)(id error);
 *  @param repeats   是否重复推送, 如果重复的话时间必须大于60s
 *  @param action   通知指定的行为操作
 */
-- (void)requestId:(NSString * __nullable)requestId AddNotificationTaskWithID:(NSString *)noticeId Title:(NSString *)title Message:(NSString *)message Delay:(int)delayTime ImageURL:(NSString *)imageURL Repeats:(BOOL)repeats NotificationDoAction:(NotificationAction *)action Completion:(void (^)(BOOL isSuccess))completion;
+- (void)addNotificationTaskWithID:(NSString *)noticeId Title:(NSString *)title Message:(NSString *)message Delay:(int)delayTime ImageURL:(NSString *)imageURL Repeats:(BOOL)repeats NotificationDoAction:(NotificationAction *)action Completion:(void (^)(BOOL isSuccess))completion;
 
 /**
 *  取消某个本地定时推送通知接口
@@ -234,11 +227,10 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
 *  讯息获取接口
  
-*  @param requestId    接口请求标识，有传入，就在回调中原样回传，用于标识回调；没有传入，这回调数据中就没有此字段值
 *  @param currentLocation  当前所处位置：1 游戏大厅  2 一场游戏后
 *  @param completion  讯息接口回调，返回了弹框的信息内容
 */
-- (void)popAlertMessageRequestId:(NSString * __nullable)requestId GameLocation:(NSInteger)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
+- (void)popAlertMessageGameLocation:(NSInteger)currentLocation Completion:(void (^)( AlertMessage * __nullable message))completion;
 
 - (NSString *)valueForConfigsKeyName:(NSString * __nonnull)keyName;
 
