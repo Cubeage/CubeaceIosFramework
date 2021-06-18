@@ -246,6 +246,7 @@ typedef void (^InAppPurchasesFail)(id error);
 */
 - (void)openCustomerServiceSystem;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
