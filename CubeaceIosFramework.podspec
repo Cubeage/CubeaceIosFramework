@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.2.2"
+  spec.version      = "2.2.3"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   #依赖的系统framework文件
-  spec.frameworks = "GameKit", "AuthenticationServices", "Foundation", "UIKit", "StoreKit", "SafariServices", "LocalAuthentication", "AdSupport", "SystemConfiguration", "WebKit", "AudioToolbox", "CoreMedia"
+  spec.frameworks = "GameKit", "AuthenticationServices", "Foundation", "UIKit", "StoreKit", "SafariServices", "LocalAuthentication", "AdSupport", "SystemConfiguration", "WebKit", "AudioToolbox", "CoreMedia", "AppTrackingTransparency"
 
   # spec.library   = "iconv"
   #依赖的系统静态资源
