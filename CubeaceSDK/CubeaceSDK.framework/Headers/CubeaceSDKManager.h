@@ -246,6 +246,11 @@ typedef void (^InAppPurchasesFail)(id error);
 */
 - (void)openCustomerServiceSystem;
 
+- (void)deleteAccountWebCookiesCache;
+
+- (void)deleteLocalUserData;
+
+
 
 @end
 

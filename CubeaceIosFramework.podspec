@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.2.4"
+  spec.version      = "2.2.5"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -231,6 +231,10 @@ Pod::Spec.new do |spec|
   spec.dependency 'TZImagePickerController'
 
   spec.dependency 'FlatBuffers-ObjC'
+
+  spec.dependency 'ThinkingSDK'  #ThinkingSDK
+    
+  spec.dependency 'Beta-AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
 
 
 end

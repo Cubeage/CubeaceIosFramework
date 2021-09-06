@@ -30,5 +30,9 @@
 	<string></string>
 	<key>AppleID</key>
 	<string></string>
+	<key>ThinkingAnalyticsSDKAPP_ID</key>
+	<string></string>
+	<key>AppsFlyerDevKey</key>
+	<string></string>
 </dict>
 </plist>
