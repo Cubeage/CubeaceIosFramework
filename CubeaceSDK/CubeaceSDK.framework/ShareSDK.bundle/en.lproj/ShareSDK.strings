@@ -12,8 +12,10 @@
 */
 
 "ShareSDK_permissionDenied" = "Permission denied";
+"ShareSDK_NetworkNotAvailable" = "Network is not available";
 "ShareSDK_platformUninit" = "Platform configuration error";
 "ShareSDK_PrivacyUnagreement" = "No privacy agreement was agreed";
+"ShareSDK_AccessAlbum" = "Please open the access to the album";
 "ShareSDK_unsetURLScheme" = "Not configured urlscheme";
 "ShareSDK_paramsError" = "Parameter error";
 "ShareSDK_paramsLack" = "Lack of necessary parameters";

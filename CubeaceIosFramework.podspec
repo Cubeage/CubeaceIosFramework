@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.2.5"
+  spec.version      = "2.2.6"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -144,10 +144,10 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  spec.dependency "FBSDKCoreKit"
-  spec.dependency "FBSDKLoginKit"
-  spec.dependency "FBSDKShareKit"
-  spec.dependency "FBSDKPlacesKit"
+  #spec.dependency "FBSDKCoreKit"
+  #spec.dependency "FBSDKLoginKit"
+  #spec.dependency "FBSDKShareKit"
+  #spec.dependency "FBSDKPlacesKit"
 
   spec.dependency "GoogleSignIn", "~> 5.0"
 
@@ -176,42 +176,42 @@ Pod::Spec.new do |spec|
   # spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'）
  
   # 平台SDK模块其他平台，按需添加
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Kakao'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Yixin'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Kakao'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Yixin'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Facebook'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Messenger'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Copy'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Evernote'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Messenger'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Copy'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Evernote'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Instagram'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Instapaper'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Line'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Mail'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/SMS'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Instapaper'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Line'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Mail'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/SMS'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/WhatsApp'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MeiPai'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouTube'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MeiPai'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouTube'
   spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Twitter'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Dropbox'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/CMCC'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Telegram'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Reddit'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DouBan'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Flickr'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/KaiXin'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/LinkedIn'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MingDao'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pinterest'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pocket'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Print'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/TencentWeibo'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Tumblr'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/VKontakte'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouDaoNote'
-  spec.dependency 'mob_sharesdk/ShareSDKPlatforms/ESurfing'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Dropbox'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/CMCC'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Telegram'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Reddit'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/DouBan'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Flickr'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/KaiXin'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/LinkedIn'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/MingDao'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pinterest'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Pocket'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Print'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/TencentWeibo'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/Tumblr'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/VKontakte'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/YouDaoNote'
+  #spec.dependency 'mob_sharesdk/ShareSDKPlatforms/ESurfing'
  
   # 使用配置文件分享模块（非必需）
   spec.dependency 'mob_sharesdk/ShareSDKConfigFile'
