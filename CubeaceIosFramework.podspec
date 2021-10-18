@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.3.3"
+  spec.version      = "2.3.4"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -144,9 +144,9 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  spec.dependency "FBSDKCoreKit"
-  spec.dependency "FBSDKLoginKit"
-  spec.dependency "FBSDKShareKit"
+  spec.dependency "FBSDKCoreKit", '11.2.1'
+  spec.dependency "FBSDKLoginKit", '11.2.1'
+  spec.dependency "FBSDKShareKit", '11.2.1'
   #spec.dependency "FBSDKPlacesKit"
 
   spec.dependency "GoogleSignIn", "~> 5.0"
@@ -234,7 +234,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'ThinkingSDK'  #ThinkingSDK
     
-  spec.dependency 'Beta-AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
+  spec.dependency 'AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
 
 
 end
