@@ -250,7 +250,15 @@ typedef void (^InAppPurchasesFail)(id error);
 
 - (void)deleteLocalUserData;
 
+/**
+ 获取App Tracking Transparency权限
+ */
+- (void)requestTrackingAuthorization;
 
+/**
+ 注册推送通知（远程通知、本地通知）
+ */
+- (void)registerNotifications;
 
 @end
 
