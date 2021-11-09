@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.3.5"
+  spec.version      = "2.3.6"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -236,7 +236,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'ThinkingSDK'  #ThinkingSDK
     
-  # spec.dependency 'AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
+  spec.dependency 'AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
 
 
 end
