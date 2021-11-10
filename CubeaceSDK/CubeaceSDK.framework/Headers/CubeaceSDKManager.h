@@ -253,7 +253,7 @@ typedef void (^InAppPurchasesFail)(id error);
 /**
  获取App Tracking Transparency权限
  */
-- (void)requestTrackingAuthorization;
+- (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(BOOL isTracking))completion;
 
 /**
  注册推送通知（远程通知、本地通知）
