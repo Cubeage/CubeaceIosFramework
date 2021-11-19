@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.3.8"
+  spec.version      = "2.4.0"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -151,9 +151,9 @@ Pod::Spec.new do |spec|
 
   spec.dependency "GoogleSignIn", "~> 5.0"
 
-  spec.dependency "Firebase/Analytics"
-  spec.dependency "Firebase/DynamicLinks"
-  spec.dependency "Firebase/Messaging"
+  #spec.dependency "Firebase/Analytics"
+  #spec.dependency "Firebase/DynamicLinks"
+  #spec.dependency "Firebase/Messaging"
 
   ##暂时不需要，因为包括UIWebbView，会提审不了
   #spec.dependency 'TwitterKit'
@@ -234,7 +234,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'ThinkingSDK'  #ThinkingSDK
     
-  spec.dependency 'AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
+  #spec.dependency 'AppsFlyerFramework' #  AppsFlyer SDK埋点采集数据
 
 
 end
