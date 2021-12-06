@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.4.0"
+  spec.version      = "2.4.1"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
@@ -144,9 +144,10 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  spec.dependency "FBSDKCoreKit", '11.2.1'
-  spec.dependency "FBSDKLoginKit", '11.2.1'
-  spec.dependency "FBSDKShareKit", '11.2.1'
+  spec.dependency "FBSDKCoreKit", '~> 12.1.0'
+  spec.dependency "FBSDKLoginKit", '~> 12.1.0'
+  spec.dependency "FBSDKShareKit", '~> 12.1.0'
+  spec.dependency "FBSDKGamingServicesKit", '~> 12.1.0'
   #spec.dependency "FBSDKPlacesKit"
 
   spec.dependency "GoogleSignIn", "~> 5.0"
