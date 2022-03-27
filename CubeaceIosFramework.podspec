@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CubeaceIosFramework"
-  spec.version      = "2.4.9"
+  spec.version      = "2.5.0"
   spec.summary      = "CubeaceIosFramework SDK提供出去供第三方使用的相应文件."
 
   # This description is used to generate tags and improve search results.
