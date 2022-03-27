@@ -28,6 +28,8 @@ typedef void (^CompletionCallback)(void);
 
 typedef void (^InAppPurchasesFail)(id error);
 
+typedef void (^FBBindCompletion)(BOOL isSuccess , NSString * token);
+
 @interface CubeaceSDKManager : NSObject
 
 @property (nonatomic, strong)CCGAssistiveTouchButton * CCGButton;
@@ -95,6 +97,11 @@ typedef void (^InAppPurchasesFail)(id error);
 *  账号绑定接口
 */
 - (void)bindAccountSetting;
+
+/**
+*  FB绑定接口
+*/
+- (void)facebookBind;
 
 /**
 *  SDK评分弹框接口
