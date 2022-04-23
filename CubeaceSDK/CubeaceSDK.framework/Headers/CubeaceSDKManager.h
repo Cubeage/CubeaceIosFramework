@@ -17,7 +17,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^LoginCallBack)(User * uerInfo);
+typedef void (^LoginCallBack)(BOOL isLoginSuccess, User * uerInfo);
 typedef void (^LogOutCallBack)(void);
 typedef void (^ShareCallBack)(BOOL isSuccess);
 typedef void (^SucceessBlock)(BOOL isSuccess , NSString * info);
@@ -258,7 +258,12 @@ typedef void (^FBBindCompletion)(BOOL isSuccess , NSString * token);
 - (void)deleteLocalUserData;
 
 /**
- 获取App Tracking Transparency权限
+ 初始化时，获取App Tracking Transparency权限
+ */
+- (void)getAdvertisingTrackingAuthorityWithCompletionHandler:(void (^)(NSDictionary* authorityDict))completion;
+
+/**
+ 弹框，请求授权App Tracking Transparency权限操作
  */
 - (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(BOOL isTracking))completion;
 
